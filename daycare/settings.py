@@ -47,7 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles','core','rest_framework','corsheaders','rest_framework_simplejwt','rest_framework_simplejwt.token_blacklist'
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://brightpath-mu.vercel.app/",
+]
 
 MIDDLEWARE = [
 
