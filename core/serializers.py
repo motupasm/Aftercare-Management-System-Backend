@@ -48,7 +48,7 @@ class LoginUserSerializer(TokenObtainPairSerializer):
         user = authenticate(email=email , password=password)
 
         if not user:
-            raise ValidationError("Invalid Details")
+            raise ValidationError("Invalid Credentials")
         data = super().validate({
             self.username_field : email,
             'password' :password
