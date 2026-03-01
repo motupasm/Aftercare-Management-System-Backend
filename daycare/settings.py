@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://brightpath-mu.vercel.app/",
+    "https://brightpath-mu.vercel.app",
 ]
 
 MIDDLEWARE = [
